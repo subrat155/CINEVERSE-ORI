@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CineVerse - Movie Booking</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --bg-main: #1C1F26;
+        --bg-card: #2A2E36;
+        --bg-footer: #22252B;
+        --text-main: #FFFFFF;
+        --text-secondary: #B0B3B8;
+        --border-color: #3A3F47;
+        --primary: #007BFF;
+        --primary-hover: #0056D2;
+      }
+
+      [data-theme="light"] {
+        --bg-main: #F3F4F6;
+        --bg-card: #FFFFFF;
+        --bg-footer: #E5E7EB;
+        --text-main: #111827;
+        --text-secondary: #4B5563;
+        --border-color: #D1D5DB;
+      }
+
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: var(--bg-main);
+        color: var(--text-main);
+        overflow-x: hidden;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+
+      /* Utility classes for using CSS variables with Tailwind */
+      .bg-theme-main { background-color: var(--bg-main); }
+      .bg-theme-card { background-color: var(--bg-card); }
+      .bg-theme-footer { background-color: var(--bg-footer); }
+      .text-theme-main { color: var(--text-main); }
+      .text-theme-secondary { color: var(--text-secondary); }
+      .border-theme { border-color: var(--border-color); }
+
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: var(--bg-main); 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: var(--border-color); 
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: var(--primary); 
+      }
+    </style>
+  
+  
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.10.1",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.556.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+   
+  </body>
+</html>
